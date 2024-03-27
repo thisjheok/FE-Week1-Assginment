@@ -16,7 +16,8 @@
       height: 100%;
       min-height: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
+      align-items: stretch;
     }
 
     .box {
@@ -29,10 +30,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      
     }
     .box-1 {
       background-color: rgb(248, 223, 227);
-      height: 60px;
+      flex: 1;
     }
 
     .box-2 {
@@ -42,7 +44,7 @@
 
     .box-3 {
       background-color: rgb(246, 142, 158);
-      height: 60px;
+      flex: 1;
     }
   </style>
   <body>
