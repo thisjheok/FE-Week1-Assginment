@@ -4,30 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .header{
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background: rgb(255, 181, 181);
+        padding: 2%;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .header-title{
+        margin: 0 auto;
+      }
+      body {
+        padding-top: 75px;
+        margin: 0;
+      }
+      .navbar {
+        padding-top: 5px;
+        width: 100%;
+        background: black;
+        color: white;
+        text-align: right;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 30px;
+        display: flex;
+        justify-content: flex-end; 
+      }
+      a{
+        display: block;
+        text-align: center;
+        margin: .25rem;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        color: white;
+      }
+      .login{
+        background: rgb(255, 132, 75);
+        height: 500px;
+      }
+      .idpw{
+        padding: 1%;
+        margin: 2px;
+        border:none;
+        border-radius: 3%;
+      }
+      .idpwbox{
+        padding: 1%;
+        display: block; 
+      }
+      .hello{
+        margin: 0;
+        background: orange;
+        height: 500px;
+        display: block;
+        padding: 10px;
+      }
+      h2{
+        margin: 0;
+      }
+      .hello>p{
+        margin: 0;
+      }
+      .footer{
+        background: rgb(138, 255, 5);
+        height: 70px;
+      }
+      .footer>p{
+        padding-top: 30px;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <header>*** 블로그 입니다</header>
-    <nav>
+    <div class="header">
+      <header class="header-title">*** 블로그 입니다</header>
+    </div>
+    <div class="navbar">
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#">DIARY</a></li>
         <li><a href="#">MEDIA</a></li>
       </ul>
-    </nav>
-    <article>
-      <section>
-        <form action="">
-          <input type="text" placeholder="아이디" />
-          <input type="password" placeholder="비밀번호" />
+    </div>
+    <article class="content1">
+      <section class="login">
+        <form action="" class="idpwbox">
+          <input type="text" placeholder="아이디" class="idpw"/>
+          <br>
+          <input type="password" placeholder="비밀번호" class="idpw"/>
         </form>
       </section>
-      <section>
-        <h2>안녕하세요!</h2>
-        <p>HTML 실습 과제입니다.</p>
+      <section class="hello">
+        <h2 class="content2">안녕하세요!</h2>
+        <p class="content2">HTML 실습 과제입니다.</p>
       </section>
     </article>
-    <footer>
-      <p>이곳은 footer입니다.</p>
+    <footer class="footer">
+      <p align="center">이곳은 footer입니다.</p>
     </footer>
   </body>
 </html>
